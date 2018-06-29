@@ -8,7 +8,7 @@ class TestCoin < Minitest::Test
     end
 
     def test_11_cents_returns_1_dime_1_penny
-        assert_equal({dime=>1, penny=>1}, min_coins(11))
+        assert_equal({:dime=>1, :penny=>1}, min_coins(11))
     end
 
 end
