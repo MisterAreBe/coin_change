@@ -11,4 +11,8 @@ class TestCoin < Minitest::Test
         assert_equal({:dime=>1, :penny=>1}, min_coins(11))
     end
 
+    def test_100_cents_returns_4_quarters
+        assert_equal({:quarter=>4}, min_coins(100))
+    end
+
 end
