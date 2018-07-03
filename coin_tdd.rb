@@ -18,5 +18,4 @@ class TestCoin < Minitest::Test
     def test_9001_cents_returns_correctly
         assert_equal({:quarter=>360,:penny=>1}, min_coins(9001))
     end
-
 end
